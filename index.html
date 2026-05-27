@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Assistance Program</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="nav" id="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#home" aria-label="Student Assistance Program home">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="primary-nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="primary-nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#mission">About Us</a>
+        <div class="nav-group">
+          <a class="nav-group-toggle" href="careers.html" aria-haspopup="true">
+            <span>Career Paths</span>
+            <i class="ti ti-chevron-down" aria-hidden="true"></i>
+          </a>
+          <div class="nav-sub-links" aria-label="Career path links">
+            <a href="careers.html?path=career-stem">STEM</a>
+            <a href="careers.html?path=career-healthcare">Healthcare</a>
+            <a href="careers.html?path=career-business">Business</a>
+            <a href="careers.html?path=career-public-service">Public service</a>
+            <a href="careers.html?path=career-education">Education</a>
+            <a href="careers.html?path=career-humanities">Humanities</a>
+            <a href="careers.html?path=career-creative">Creative fields</a>
+            <a href="careers.html?path=career-trades">Trades</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button class="nav-group-toggle" type="button" aria-haspopup="true">
+            <span>Study Material</span>
+            <i class="ti ti-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="nav-sub-links" aria-label="Study material links">
+            <a href="#regents-prep">Regents</a>
+            <a href="#ap-resources">AP&reg;</a>
+            <a href="#sat-act">SAT/ACT</a>
+          </div>
+        </div>
+        <a href="#clubs">Clubs &amp; Activities</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#team">Founders</a>
+        <a href="#resources">Resources</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero" id="home">
+    <div class="site" style="position:relative;z-index:1">
+      <img class="hero-logo" src="assets/sap.png" alt="Student Assistance Program logo"
+        onerror="this.style.display='none'">
+      <p>Peer-led academic support, mentorship, and resource accessibility — for the students, by the students.</p>
+      <div class="hero-btns">
+        <a class="btn-gold" href="careers.html">Explore Career Paths</a>
+        <button class="btn-outline"
+          onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Tutoring</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="mission-section section" id="mission">
+    <div class="site">
+      <div class="section-label">Our mission</div>
+      <h2 class="section-title">Guiding growth, one student at a time</h2>
+      <div class="mission-quote">"The Student Assistance Program (SAP) is dedicated to empowering students through
+        peer-led academic support, mentorship, and resource accessibility."</div>
+      <p class="mission-tagline">For the students, by the students.</p>
+    </div>
+  </section>
+  <section class="services-section section" id="services">
+    <div class="site">
+      <div class="section-label">What we offer</div>
+      <h2 class="section-title">Our services</h2>
+      <p class="section-sub">Everything you need in one place — study guides, career info, clubs, and exam prep.</p>
+
+      <div class="services-grid">
+        <div class="service-card" id="regents-prep">
+          <div class="service-icon">
+            <img src="assets/regents.png" alt="Regents prep">
+          </div>
+          <h3>Regents prep</h3>
+          <p>Study materials for Algebra I &amp; II, Geometry, Chemistry, Physics, Biology, Earth Science, US &amp;
+            World
+            History, English 12R, and Government.</p>
+        </div>
+
+        <div class="service-card" id="ap-resources">
+          <div class="service-icon">
+            <img src="assets/ap.png" alt="AP resources">
+          </div>
+          <h3>AP® resources</h3>
+          <p>Guides for 19 AP® courses including Calculus, Biology, Chemistry, US History, Computer Science, Physics,
+            Psychology, and more.</p>
+        </div>
+
+        <div class="service-card" id="sat-act">
+          <div class="service-icon">
+            <img src="assets/sat-act.png" alt="SAT and ACT prep">
+          </div>
+          <h3>SAT / ACT prep</h3>
+          <p>What each test covers, scoring breakdowns, math practice, and English writing tips for both standardized
+            exams.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/career.png" alt="Career pathways">
+          </div>
+          <h3>Career pathways</h3>
+          <p>In-depth breakdowns of STEM, healthcare, business, public service, humanities, arts, and trades careers.
+          </p>
+        </div>
+
+        <div class="service-card" id="clubs">
+          <div class="service-icon">
+            <img src="assets/club.png" alt="Clubs and activities">
+          </div>
+          <h3>Clubs &amp; activities</h3>
+          <p>Details on 35+ clubs — from Robotics and DECA to Drama Club, NHS, Chess Club, Marching Band, and more.</p>
+        </div>
+
+        <div class="service-card" id="schedule">
+          <div class="service-icon">
+            <img src="assets/schedule.png" alt="Scheduling help">
+          </div>
+          <h3>Scheduling help</h3>
+          <p>Course planning resources to help students build strong schedules aligned with their goals and interests.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="founders-section section" id="team">
+    <div class="site">
+      <div class="section-label">The team</div>
+      <h2 class="section-title">Meet the founders</h2>
+      <p class="section-sub">SAP was built by Diyar Niyazov, Sam DiNolfo, and Tyler Kenny with a shared mission to make
+        academic resources accessible to everyone.</p>
+      <div class="founders-feature">
+        <div class="founders-photo-wrap">
+          <img class="founders-photo" src="assets/founders.png"
+            alt="SAP founders Diyar Niyazov, Sam DiNolfo, and Tyler Kenny"
+            onerror="this.parentElement.style.minHeight='180px'">
+        </div>
+        <div class="founders-copy">
+          <h3>Student Assistance Program</h3>
+          <p>The founders created SAP as a student-built hub for academic prep, career exploration, club discovery, and
+            peer support at Victor High School.</p>
+          <p>The goal is simple: make the information students usually have to hunt for easy to find, easy to
+            understand, and useful when planning the next step.</p>
+          <div class="founders-list">
+            <span>Diyar Niyazov</span>
+            <span>Sam DiNolfo</span>
+            <span>Tyler Kenny</span>
+          </div>
+        </div>
+      </div>
+      <div class="founders-grid">
+        <div class="founder-card">
+          <div class="founder-avatar">DN</div>
+          <h3>Diyar Niyazov</h3>
+          <div class="role">Co-founder</div>
+        </div>
+        <div class="founder-card">
+          <div class="founder-avatar">SD</div>
+          <h3>Sam DiNolfo</h3>
+          <div class="role">Co-founder</div>
+        </div>
+        <div class="founder-card">
+          <div class="founder-avatar">TK</div>
+          <h3>Tyler Kenny</h3>
+          <div class="role">Co-founder</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Tutoring request</div>
+        <h2 class="section-title">Request academic support</h2>
+        <p class="section-sub">Need help with a class, assignment, or upcoming test?<br><br>Submit a request and the SAP
+          team will use your responses to help connect you with tutoring.</p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xykvkbzk" method="POST">
+        <input type="text" name="name" placeholder="Full name" required>
+        <input type="email" name="email" placeholder="School email" required>
+        <select name="grade" required>
+          <option value="">Grade</option>
+          <option value="9th">9th</option>
+          <option value="10th">10th</option>
+          <option value="11th">11th</option>
+          <option value="12th">12th</option>
+        </select>
+        <input type="text" name="subject" placeholder="Subject / class, e.g. Algebra II, AP Biology" required>
+        <div class="availability-group">
+          <p>Which days are you available after school? (2:15 – 3:15)</p>
+          <div class="day-options">
+            <label><input type="checkbox" name="availability" value="Monday"> Mon</label>
+            <label><input type="checkbox" name="availability" value="Tuesday"> Tue</label>
+            <label><input type="checkbox" name="availability" value="Wednesday"> Wed</label>
+            <label><input type="checkbox" name="availability" value="Thursday"> Thu</label>
+            <label><input type="checkbox" name="availability" value="Friday"> Fri</label>
+          </div>
+        </div>
+        <textarea name="notes" placeholder="Anything else we should know? (optional)"></textarea>
+        <button type="submit" class="submit-btn">Submit tutoring request</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.getElementById("primary-nav-links");
+
+    function setMobileNav(open) {
+      document.body.classList.toggle("nav-open", open);
+      if (navToggle) {
+        navToggle.setAttribute("aria-expanded", String(open));
+        navToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+      }
+    }
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        setMobileNav(!document.body.classList.contains("nav-open"));
+      });
+    }
+
+    document.querySelectorAll(".nav-links a[href^=\"#\"]").forEach(link => {
+      link.addEventListener("click", e => {
+        const id = link.getAttribute("href").slice(1);
+        const el = document.getElementById(id);
+        setMobileNav(false);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth" });
+        document.querySelectorAll(".nav-links > a").forEach(navLink => navLink.classList.remove("active"));
+        if (link.parentElement === navLinks) link.classList.add("active");
+      });
+    });
+  </script>
+</body>
+
+</html>
